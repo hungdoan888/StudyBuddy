@@ -6,6 +6,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
+import json
 import datetime
 from datetime import date
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -526,7 +527,14 @@ class Ui_MainWindow(object):
         self.label_questionsPerDayEdit_2.setText(str((totalQuestions - questionsComplete) // 
                                                  int(self.label_daysUntilTestEdit.text())))
         
-        
+
+def loadFromRegistry(key):
+    pass
+
+def saveToRegistry(key, value):
+    pass
+    
+    
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
