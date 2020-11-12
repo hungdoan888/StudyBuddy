@@ -165,7 +165,7 @@ border-radius: 10px;</string>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_5">
              <item>
-              <widget class="QPushButton" name="btn_maximize_2">
+              <widget class="QPushButton" name="btn_maximize">
                <property name="minimumSize">
                 <size>
                  <width>16</width>
@@ -197,7 +197,7 @@ QPushButton:hover {
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="btn_minimize_2">
+              <widget class="QPushButton" name="btn_minimize">
                <property name="minimumSize">
                 <size>
                  <width>16</width>
@@ -229,7 +229,7 @@ QPushButton:hover {
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="btn_close_2">
+              <widget class="QPushButton" name="btn_close">
                <property name="minimumSize">
                 <size>
                  <width>16</width>
@@ -279,8 +279,122 @@ QPushButton:hover {
          <enum>QFrame::Raised</enum>
         </property>
         <layout class="QGridLayout" name="gridLayout">
-         <item row="0" column="0">
-          <widget class="QFrame" name="frameBody1">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="2" column="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QFrame" name="frameBody_9">
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>230</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QFrame" name="frame_questionsPerDay_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>221</width>
+              <height>221</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border: 5px solid rgb(60, 231, 195);
+	border-radius: 110px;
+}
+QFrame:hover {
+	border: 5px solid rgb(105, 95, 148);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="label_questionsPerDayTitle">
+             <property name="geometry">
+              <rect>
+               <x>-20</x>
+               <y>70</y>
+               <width>261</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Adobe Devanagari</family>
+               <pointsize>16</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: none;
+color: rgb(60, 231, 195); background-color: none;</string>
+             </property>
+             <property name="text">
+              <string>QUESTIONS PER DAY</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_questionsPerDayEdit">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>80</y>
+               <width>221</width>
+               <height>71</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>MS Shell Dlg 2</family>
+               <pointsize>30</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: none;
+color: rgb(220,220,220);background-color: none;</string>
+             </property>
+             <property name="text">
+              <string>25</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QFrame" name="frameBody_1">
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>130</height>
+            </size>
+           </property>
            <property name="frameShape">
             <enum>QFrame::StyledPanel</enum>
            </property>
@@ -290,10 +404,10 @@ QPushButton:hover {
            <widget class="QLabel" name="label_todaysDateEdit">
             <property name="geometry">
              <rect>
-              <x>0</x>
+              <x>10</x>
               <y>0</y>
-              <width>261</width>
-              <height>141</height>
+              <width>241</width>
+              <height>131</height>
              </rect>
             </property>
             <property name="font">
@@ -316,9 +430,9 @@ color: rgb(220,220,220);background-color: none;</string>
            <widget class="QLabel" name="label_todaysDateTitle">
             <property name="geometry">
              <rect>
-              <x>10</x>
+              <x>0</x>
               <y>20</y>
-              <width>261</width>
+              <width>251</width>
               <height>31</height>
              </rect>
             </property>
@@ -341,8 +455,224 @@ color: rgb(60, 231, 195); background-color: none;</string>
            </widget>
           </widget>
          </item>
-         <item row="0" column="1">
-          <widget class="QFrame" name="frameBody2">
+         <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QFrame" name="frameBody_4">
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>130</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLineEdit" name="lineEdit_questionsComplete">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>50</y>
+              <width>241</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>30</pointsize>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: none;
+color: rgb(220,220,220);
+background-color: rgba(28, 29, 50, 255);</string>
+            </property>
+            <property name="text">
+             <string>400</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_questionsCompleteTitle">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>241</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Adobe Devanagari</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: none;
+color: rgb(60, 231, 195); background-color: none;</string>
+            </property>
+            <property name="text">
+             <string>QUESTIONS COMPLETE</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QFrame" name="frameBody_5">
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>130</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLineEdit" name="lineEdit_totalQuestions">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>50</y>
+              <width>241</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>30</pointsize>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: none;
+color: rgb(220,220,220);
+background-color: rgba(28, 29, 50, 255);</string>
+            </property>
+            <property name="text">
+             <string>1600</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_totalQuestionsTitle">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>20</y>
+              <width>251</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Adobe Devanagari</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: none;
+color: rgb(60, 231, 195); background-color: none;</string>
+            </property>
+            <property name="text">
+             <string>TOTAL QUESTIONS</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QFrame" name="frameBody_3">
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>130</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_daysUntilTestEdit">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>241</width>
+              <height>131</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>30</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: none;
+color: rgb(220,220,220);background-color: none;</string>
+            </property>
+            <property name="text">
+             <string>50</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_daysUntilTestTitle">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>20</y>
+              <width>241</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Adobe Devanagari</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: none;
+color: rgb(60, 231, 195); background-color: none;</string>
+            </property>
+            <property name="text">
+             <string>DAYS UNTIL TEST</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QFrame" name="frameBody_2">
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>130</height>
+            </size>
+           </property>
            <property name="frameShape">
             <enum>QFrame::StyledPanel</enum>
            </property>
@@ -354,7 +684,7 @@ color: rgb(60, 231, 195); background-color: none;</string>
              <rect>
               <x>0</x>
               <y>20</y>
-              <width>261</width>
+              <width>251</width>
               <height>31</height>
              </rect>
             </property>
@@ -406,78 +736,13 @@ background-color: rgba(28, 29, 50, 255);</string>
            </widget>
           </widget>
          </item>
-         <item row="0" column="2">
-          <widget class="QFrame" name="frameBody3">
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <widget class="QLabel" name="label_daysUntilTestEdit">
-            <property name="geometry">
-             <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>261</width>
-              <height>141</height>
-             </rect>
-            </property>
-            <property name="font">
-             <font>
-              <family>MS Shell Dlg 2</family>
-              <pointsize>30</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border: none;
-color: rgb(220,220,220);background-color: none;</string>
-            </property>
-            <property name="text">
-             <string>50</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-           <widget class="QLabel" name="label_daysUntilTestTitle">
-            <property name="geometry">
-             <rect>
-              <x>10</x>
-              <y>20</y>
-              <width>261</width>
-              <height>31</height>
-             </rect>
-            </property>
-            <property name="font">
-             <font>
-              <family>Adobe Devanagari</family>
-              <pointsize>16</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border: none;
-color: rgb(60, 231, 195); background-color: none;</string>
-            </property>
-            <property name="text">
-             <string>DAYS UNTIL TEST</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QFrame" name="frameBody4">
-           <property name="acceptDrops">
-            <bool>false</bool>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
-           </property>
-           <property name="autoFillBackground">
-            <bool>false</bool>
+         <item row="2" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QFrame" name="frameBody_7">
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>230</height>
+            </size>
            </property>
            <property name="frameShape">
             <enum>QFrame::StyledPanel</enum>
@@ -485,136 +750,35 @@ color: rgb(60, 231, 195); background-color: none;</string>
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
-           <widget class="QLineEdit" name="lineEdit_questionsComplete">
+           <widget class="QLabel" name="catPicture">
             <property name="geometry">
              <rect>
-              <x>10</x>
-              <y>50</y>
-              <width>241</width>
-              <height>41</height>
+              <x>160</x>
+              <y>110</y>
+              <width>91</width>
+              <height>111</height>
              </rect>
             </property>
-            <property name="font">
-             <font>
-              <pointsize>30</pointsize>
-             </font>
-            </property>
-            <property name="autoFillBackground">
-             <bool>false</bool>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border: none;
-color: rgb(220,220,220);
-background-color: rgba(28, 29, 50, 255);</string>
-            </property>
             <property name="text">
-             <string>400</string>
+             <string/>
             </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
+            <property name="pixmap">
+             <pixmap>cat.PNG</pixmap>
             </property>
-           </widget>
-           <widget class="QLabel" name="label_questionsCompleteTitle">
-            <property name="geometry">
-             <rect>
-              <x>0</x>
-              <y>20</y>
-              <width>261</width>
-              <height>31</height>
-             </rect>
-            </property>
-            <property name="font">
-             <font>
-              <family>Adobe Devanagari</family>
-              <pointsize>16</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border: none;
-color: rgb(60, 231, 195); background-color: none;</string>
-            </property>
-            <property name="text">
-             <string>QUESTIONS COMPLETE</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
+            <property name="scaledContents">
+             <bool>true</bool>
             </property>
            </widget>
           </widget>
          </item>
-         <item row="1" column="1">
-          <widget class="QFrame" name="frameBody5">
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
+         <item row="1" column="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QFrame" name="frameBody_6">
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>130</height>
+            </size>
            </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <widget class="QLineEdit" name="lineEdit_totalQuestions">
-            <property name="geometry">
-             <rect>
-              <x>10</x>
-              <y>50</y>
-              <width>241</width>
-              <height>41</height>
-             </rect>
-            </property>
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>30</pointsize>
-             </font>
-            </property>
-            <property name="autoFillBackground">
-             <bool>false</bool>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border: none;
-color: rgb(220,220,220);
-background-color: rgba(28, 29, 50, 255);</string>
-            </property>
-            <property name="text">
-             <string>1600</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-           <widget class="QLabel" name="label_totalQuestionsTitle">
-            <property name="geometry">
-             <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>261</width>
-              <height>31</height>
-             </rect>
-            </property>
-            <property name="font">
-             <font>
-              <family>Adobe Devanagari</family>
-              <pointsize>16</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border: none;
-color: rgb(60, 231, 195); background-color: none;</string>
-            </property>
-            <property name="text">
-             <string>TOTAL QUESTIONS</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </widget>
-         </item>
-         <item row="1" column="2">
-          <widget class="QFrame" name="frameBody6">
            <property name="frameShape">
             <enum>QFrame::StyledPanel</enum>
            </property>
@@ -626,8 +790,8 @@ color: rgb(60, 231, 195); background-color: none;</string>
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>261</width>
-              <height>141</height>
+              <width>241</width>
+              <height>131</height>
              </rect>
             </property>
             <property name="font">
@@ -650,9 +814,9 @@ color: rgb(220,220,220);background-color: none;</string>
            <widget class="QLabel" name="label_questionsRemaining">
             <property name="geometry">
              <rect>
-              <x>10</x>
+              <x>0</x>
               <y>20</y>
-              <width>261</width>
+              <width>241</width>
               <height>31</height>
              </rect>
             </property>
@@ -675,12 +839,12 @@ color: rgb(60, 231, 195); background-color: none;</string>
            </widget>
           </widget>
          </item>
-         <item row="2" column="0">
-          <widget class="QFrame" name="frameBody7">
+         <item row="2" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QFrame" name="frameBody_8">
            <property name="minimumSize">
             <size>
-             <width>0</width>
-             <height>220</height>
+             <width>250</width>
+             <height>230</height>
             </size>
            </property>
            <property name="frameShape">
@@ -689,46 +853,11 @@ color: rgb(60, 231, 195); background-color: none;</string>
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
-           <widget class="QLabel" name="catPicture">
+           <widget class="QFrame" name="frame_questionsPerDay">
             <property name="geometry">
              <rect>
-              <x>170</x>
-              <y>120</y>
-              <width>91</width>
-              <height>111</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="pixmap">
-             <pixmap>cat.PNG</pixmap>
-            </property>
-            <property name="scaledContents">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QFrame" name="frameBody8">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>235</height>
-            </size>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <widget class="QFrame" name="frame_questionsPerDayInsideInside">
-            <property name="geometry">
-             <rect>
-              <x>30</x>
-              <y>10</y>
+              <x>20</x>
+              <y>0</y>
               <width>221</width>
               <height>221</height>
              </rect>
@@ -754,7 +883,7 @@ QFrame:hover {
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <widget class="QLabel" name="label_questionsPerDayTitle_2">
+            <widget class="QLabel" name="label_questionsComplete">
              <property name="geometry">
               <rect>
                <x>-20</x>
@@ -780,7 +909,7 @@ color: rgb(60, 231, 195); background-color: none;</string>
               <set>Qt::AlignCenter</set>
              </property>
             </widget>
-            <widget class="QLabel" name="label_questionsPerDayEdit_2">
+            <widget class="QLabel" name="label_questionsCompleteEdit">
              <property name="geometry">
               <rect>
                <x>10</x>
@@ -809,99 +938,6 @@ color: rgb(220,220,220);background-color: none;</string>
            </widget>
           </widget>
          </item>
-         <item row="2" column="2">
-          <widget class="QFrame" name="frameBody9">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>220</height>
-            </size>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <widget class="QFrame" name="frame_questionsPerDayInside">
-            <property name="geometry">
-             <rect>
-              <x>20</x>
-              <y>10</y>
-              <width>221</width>
-              <height>221</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QFrame{
-	border: 5px solid rgb(60, 231, 195);
-	border-radius: 110px;
-}
-QFrame:hover {
-	border: 5px solid rgb(105, 95, 148);
-}</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <widget class="QLabel" name="label_questionsPerDayTitle_3">
-             <property name="geometry">
-              <rect>
-               <x>-20</x>
-               <y>70</y>
-               <width>261</width>
-               <height>31</height>
-              </rect>
-             </property>
-             <property name="font">
-              <font>
-               <family>Adobe Devanagari</family>
-               <pointsize>16</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">border: none;
-color: rgb(60, 231, 195); background-color: none;</string>
-             </property>
-             <property name="text">
-              <string>QUESTIONS PER DAY</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-            <widget class="QLabel" name="label_questionsPerDayEdit_3">
-             <property name="geometry">
-              <rect>
-               <x>0</x>
-               <y>80</y>
-               <width>221</width>
-               <height>71</height>
-              </rect>
-             </property>
-             <property name="font">
-              <font>
-               <family>MS Shell Dlg 2</family>
-               <pointsize>30</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">border: none;
-color: rgb(220,220,220);background-color: none;</string>
-             </property>
-             <property name="text">
-              <string>25</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </widget>
-          </widget>
-         </item>
         </layout>
        </widget>
       </item>
@@ -922,6 +958,98 @@ color: rgb(220,220,220);background-color: none;</string>
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_credits">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_credit">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>131</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: none; color: rgb(128, 102, 168);</string>
+            </property>
+            <property name="text">
+             <string>By: Hung Doan</string>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="margin">
+             <number>-3</number>
+            </property>
+            <property name="indent">
+             <number>20</number>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_grip">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">padding: 5px;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </item>
      </layout>
