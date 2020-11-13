@@ -4,6 +4,8 @@
 # Motivation
 - The main purpose of this app was to become familiar with the pyqt5 and cxFreeze frameworks.  I wanted to make an app with a modern look and feel.  
 
+![Alt text](appScreenShot.PNG?raw=true "Study Buddy Screenshot")
+
 # Features
 - Automatically updates the date upon opening
 - Registry included so that the test date, number of questions, and total questions are loaded when the app is loaded
@@ -21,8 +23,6 @@
 - Enter the date of an upcoming test
 - Enter the total number of questions required to study prior to the test
 - Enter the number of questions that you have completed
-
-![Alt text](appScreenShot.PNG?raw=true "Study Buddy Screenshot")
 
 # Credits
 - GUI template by Wanderson
