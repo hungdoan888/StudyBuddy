@@ -24,3 +24,7 @@
 
 ![Alt text](appScreenShot.PNG?raw=true "Study Buddy Screenshot")
 
+# Credits
+- GUI template by Wanderson
+- https://www.youtube.com/watch?v=wQfKamzV1uQ&ab_channel=Wanderson
+- https://github.com/Wanderson-Magalhaes/Python_PySide2_Custom_Title_Bar
