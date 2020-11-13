@@ -6,6 +6,11 @@
 
 ![Alt text](appScreenShot.PNG?raw=true "Study Buddy Screenshot")
 
+# Tech/framework used
+- Python
+- pyqt5
+- cxFreeze
+
 # Features
 - Automatically updates the date upon opening
 - Registry included so that the test date, number of questions, and total questions are loaded when the app is loaded
@@ -15,11 +20,6 @@
 - Resize drag-box on the bottom right corner of app.  Circle appears when mouse floats over it
 - Circles change colors when mouse hovers over percent complete and questions to study per day
 - App adjusts size proportionately when it is resized
-
-# Tech/framework used
-- Python
-- pyqt5
-- cxFreeze
 
 # Installation
 - The application is wrapped in an executable but must be ran within the 'build' folder.  Main application is studyBuddy_main.exe.
