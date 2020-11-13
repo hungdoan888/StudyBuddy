@@ -4,6 +4,7 @@
 # Motivation
 - The main purpose of this app was to become familiar with the pyqt5 and cxFreeze frameworks.  I wanted to make an app with a modern look and feel.  
 
+# Screenshots
 ![Alt text](appScreenShot.PNG?raw=true "Study Buddy Screenshot")
 
 # Tech/framework used
