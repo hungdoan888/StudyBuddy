@@ -16,6 +16,11 @@
 - Circles change colors when mouse hovers over percent complete and questions to study per day
 - App adjusts size proportionately when it is resized
 
+# Tech/framework used
+- Python
+- pyqt5
+- cxFreeze
+
 # Installation
 - The application is wrapped in an executable but must be ran within the 'build' folder.  Main application is studyBuddy_main.exe.
 
