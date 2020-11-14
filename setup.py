@@ -16,7 +16,7 @@ packages = ["os"]
 
 # GUI applications require a different base on Windows (the default is for a
 # console application).
-base = "Console"
+base = "Win32GUI"
 setup(  name = "studyBuddy",
         version = "0.1",
         description = "Used to determine how much you should study for an upcoming test",

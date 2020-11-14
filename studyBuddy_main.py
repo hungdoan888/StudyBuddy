@@ -204,8 +204,8 @@ class MainWindow(QWidget):
         # Set Questions remaining and Percent Complete labels
         self.ui.label_questionsRemainingEdit.setText(str(totalQuestions - questionsComplete))
         self.ui.label_questionsCompleteEdit.setText(str(round(questionsComplete/totalQuestions*100, 1)) + "%")
-        self.ui.label_questionsPerDayEdit.setText(str((totalQuestions - questionsComplete) // 
-                                                 int(self.ui.label_daysUntilTestEdit.text())))
+        self.ui.label_questionsPerDayEdit.setText(str(round((totalQuestions - questionsComplete) / 
+                                                        int(self.ui.label_daysUntilTestEdit.text()), 1)))
         
         # Registry
         saveToRegistry('totalQuestions', self.ui.lineEdit_totalQuestions.text())
